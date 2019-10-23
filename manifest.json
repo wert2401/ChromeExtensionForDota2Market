@@ -1,0 +1,19 @@
+{
+    "name": "DotaMarket",
+    "version": "1.0",
+    "description": "It helps to buy items in Dota Market",
+    "permissions": [
+        "https://steamcommunity.com/*"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persisrent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://market.dota2.net/*"],
+            "js": ["market.js"]
+        }
+    ],
+    "manifest_version": 2
+}
