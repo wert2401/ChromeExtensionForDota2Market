@@ -11,7 +11,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://market.dota2.net/*"],
+            "matches": ["*://market.dota2.net/*", "*://market.csgo.com/*"],
             "js": ["market.js"]
         }
     ],
